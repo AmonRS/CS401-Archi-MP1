@@ -1,23 +1,22 @@
-// comment
+// test asm program
 
 .data
     var1: 5 7 8 9
-    var2: 987
+    var2: 98
 
 .code
-    // li rr, aa
-    li %r1, 56
-    li %r2, 72
+    li %r1, 56      // li rr, aa
+    li %r2, 72       //
     li %r5, var2
 
-    // add rr, rr, rr
-    add %r3, %r1, %r2
+    add %r3, %r1, %r2        // add rr, rr, rr
 
-    // sub rr, rr, rr
-    sub %r4, %r2, %r1
+    sub %r4, %r2, %r1       // sub rr, rr, rr
 
-    // jmp iiiiii
-    jmp 1008
+    jmp 32                  // jmp iiiiii
+
+    mov %r3, %r1
+    mov %r4, %r2
 
 
 
